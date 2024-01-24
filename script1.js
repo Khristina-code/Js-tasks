@@ -1,3 +1,9 @@
 let date = new Date()
-console.log(date.getDay())
+if (date.getDay() < 5) {
+	console.log('work day')
+} else {
+	console.log('weekend')
+}
+
+
 
