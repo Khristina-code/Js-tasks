@@ -1,5 +1,3 @@
-let str = '2030-10-12';
-let res = str.split('-').reverse().join('-');
-
-console.log(res)
+let date = new Date()
+console.log(date.getDay())
 
