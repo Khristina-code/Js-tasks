@@ -1,2 +1,2 @@
-let month = new Date()
-console.log(month.getMonth())
+let year = new Date()
+console.log(year.getFullYear())
