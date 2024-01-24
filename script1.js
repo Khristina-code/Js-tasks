@@ -1,10 +1,9 @@
-let date = new Date()
-let month = date.getMonth()
-let months = [
-	'січень', 'лютий', 'березень', 'квітень', 'травень', 'червень',
-	'липень', 'серпень', 'вересень', 'жовтень', 'листопад', 'грудень'
+let date = new Date(2005, 12, 14)
+let day = date.getDay()
+let days = [
+	'неділя', 'понеділок', 'вівторок', 'середа', 'четвер', 'пятниця', 'субота'
 ]
-console.log(months[month])
+console.log(days[day])
 
 
 
