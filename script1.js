@@ -1,8 +1,9 @@
-let date1  = new Date(2005, 11, 14);
-let date2 = new Date();
+let date1  = new Date(2010, 1, 15);
+let date2 = new Date(2000, 8, 1);
 
-let res = (date2.getFullYear() - date1.getFullYear()) * 12 + (date2.getMonth() - date1.getMonth());
+let res = (date1 - date2);
 console.log(res);
+
 
 
 
