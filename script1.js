@@ -1,7 +1,7 @@
-let now  = new Date();
-let date = new Date(now.getFullYear(), 11, 31);
+let now = new Date();
 
-console.log(date.getDay())
+let date = new Date(now.getFullYear(), now.getMonth() - 1, now.getDay());
+console.log(date.getDay());
 
 
 
