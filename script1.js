@@ -1,8 +1,14 @@
-let date1  = new Date(2010, 1, 15);
-let date2 = new Date(2000, 8, 1);
+function lastDayOfMonth(month, year) {
+  let firstDay = new Date(year, month, 1)
+  let lastDay = new Date(firstDay - 1)
+  return lastDay
+}
 
-let res = (date1 - date2);
-console.log(res / (1000 * 60 * 60 * 24 * 365));
+let month = 3
+let year = 2020
+
+let lastDay = lastDayOfMonth(month, year)
+console.log(lastDay)
 
 
 
