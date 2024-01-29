@@ -1,14 +1,7 @@
-function lastDayOfMonth(month, year) {
-  let firstDay = new Date(year, month, 1)
-  let lastDay = new Date(firstDay - 1)
-  return lastDay
-}
-
-let month = 3
-let year = 2020
-
-let lastDay = lastDayOfMonth(month, year)
-console.log(lastDay)
+let date = new Date(2025, 5, 0);
+let day = date.getDay()
+let days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+console.log(days[day])
 
 
 
