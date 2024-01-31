@@ -1,4 +1,6 @@
-let date = new Date()
-let date1 = new Date(date.getFullYear(), date.getMonth() + 1, 0)
+function isLeap(year) {
+  return new Date(year, 1, 29).getDate() === 29
+}
 
-console.log(date1.getDay())
+let year = 2024
+console.log(isLeap(year))
