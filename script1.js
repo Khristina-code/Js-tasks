@@ -1,18 +1,10 @@
-function findPreviousLeapYear(currentYear) {
-  let year = currentYear + 1
+let date1 = new Date('2020-11-31');
+let date2 = new Date('2020-12-01');
 
-  while (!isLeap(year)) {
-    year++;
-  }
-
-  return year
+if (date1 > date2) {
+  console.log('1 дата більша за другу')
+} else if (date1 < date2) {
+  console.log('2 дата більша за першу')
+} else {
+  console.log('дати рівні')
 }
-
-function isLeap(year) {
-  return new Date(year, 1, 29).getDate() === 29
-}
-
-let currentYear = new Date().getFullYear()
-
-console.log(findPreviousLeapYear(currentYear))
-
