@@ -1,10 +1,9 @@
-let date1 = new Date('09-21');
-let date2 = new Date('09-23');
+let date = '08-18';
 
-if (date1 > date2) {
-  console.log('1 дата більша за другу')
-} else if (date1 < date2) {
-  console.log('2 дата більша за першу')
-} else {
-  console.log('дати рівні')
+if (date >= '07-24' && date <= '08-23') {
+  console.log('Знак зодіаку - Діва')
+} else if (date >= '08-24' && date <= '09-23') {
+  console.log('Знак зодіаку - Терези')
+} else if(date >= '09-24' && date <= '10-22') {
+  console.log('Знак зодіаку - Скорпіон')
 }
