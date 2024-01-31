@@ -1,9 +1,9 @@
-let date = '08-18';
+let date = new Date()
+let date1 = new Date(date.getFullYear(), date.getMonth(), date.getDate(), date.getHours(), date.getMinutes(), date.getSeconds())
+let date2 = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 12)
 
-if (date >= '07-24' && date <= '08-23') {
-  console.log('Знак зодіаку - Діва')
-} else if (date >= '08-24' && date <= '09-23') {
-  console.log('Знак зодіаку - Терези')
-} else if(date >= '09-24' && date <= '10-22') {
-  console.log('Знак зодіаку - Скорпіон')
+if (date1 > date2) {
+  console.log('Вже був опівдень')
+} else if (date < date2) {
+  console.log('Ще не був опівдень')
 }
