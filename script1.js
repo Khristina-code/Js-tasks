@@ -1,5 +1,5 @@
-let date1 = new Date('2020-11-31');
-let date2 = new Date('2020-12-01');
+let date1 = new Date('09-21');
+let date2 = new Date('09-23');
 
 if (date1 > date2) {
   console.log('1 дата більша за другу')
