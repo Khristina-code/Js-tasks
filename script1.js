@@ -1,9 +1,6 @@
-let date = new Date()
-let date1 = new Date(date.getFullYear(), date.getMonth(), date.getDate(), date.getHours(), date.getMinutes(), date.getSeconds())
-let date2 = new Date(date.getFullYear(), date.getMonth(), 15)
-
-if (date1 > date2) {
-  console.log('Минула половина місяця')
-} else if (date < date2) {
-  console.log('Ще не минула половина місяця')
-}
+let elem1 = document.querySelector('#elem1')
+let elem2 = document.querySelector('#elem2')
+let elem3 = document.querySelector('#elem3')
+console.log(elem1)
+console.log(elem2)
+console.log(elem3)
