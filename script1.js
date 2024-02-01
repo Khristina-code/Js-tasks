@@ -1,2 +1,2 @@
-let elem = document.querySelector('#block .elem')
+let elem = document.querySelector('.block p')
 console.log(elem)
