@@ -1,4 +1,4 @@
 let button = document.querySelector('#button');
-button.addEventListener('dblclick', function () {
+button.addEventListener('mouseover', function () {
   console.log('hello')
 });
