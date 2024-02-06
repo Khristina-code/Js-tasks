@@ -1,4 +1,4 @@
 let button = document.querySelector('#button');
-button.addEventListener('mouseover', function () {
+button.addEventListener('mouseout', function () {
   console.log('hello')
 });
