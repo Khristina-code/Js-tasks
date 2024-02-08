@@ -1,11 +1,8 @@
 let button = document.querySelector('#button')
-button.addEventListener('mouseover', func1)
-button.addEventListener('mouseout', func2)
+button.addEventListener('click', func1)
+let elem = document.querySelector('#elem')
+elem.textContent = 'Hello team'
 
 function func1() {
-  console.log('hello')
-}
-
-function func2() {
-  console.log('bye')
+  console.log(elem.textContent)
 }
