@@ -4,6 +4,6 @@ let elem = document.querySelector('#elem')
 
 
 function func1() {
-  elem.textContent = 'Hello team'
+  elem.textContent = 'New paragraph'
   console.log(elem.textContent)
 }
