@@ -5,4 +5,5 @@ let elem = document.querySelector('#elem')
 
 function func1() {
   console.log(elem.type)
+  elem.type = 'submit'
 }
