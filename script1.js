@@ -4,5 +4,5 @@ let elem1 = document.querySelector('#elem1')
 
 
 function func1() {
-  elem1.textContent += "!"
+  console.log(elem1.innerHTML)
 }
