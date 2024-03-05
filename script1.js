@@ -4,5 +4,5 @@ let image = document.querySelector('#image')
 
 
 function func1() {
-  image.width = 300
+ image.width *= 2
 }
