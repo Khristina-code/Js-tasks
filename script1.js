@@ -1,8 +1,9 @@
 let button = document.querySelector('#button')
 button.addEventListener('click', func1)
-let link = document.querySelector('#link')
+let image = document.querySelector('#image')
+let paragraph = document.querySelector('#paragraph')
 
 
 function func1() {
-  link.textContent = link.textContent + ' ' + '(' + link.href + ')'
+  paragraph.textContent = image.src
 }
