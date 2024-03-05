@@ -1,9 +1,9 @@
 let button = document.querySelector('#button')
 button.addEventListener('click', func1)
-let elem = document.querySelector('#elem')
+let link = document.querySelector('#link')
+let paragraph = document.querySelector('#paragraph')
 
 
 function func1() {
-  console.log(elem.type)
-  elem.type = 'submit'
+  paragraph.textContent = link.href
 }
