@@ -1,8 +1,8 @@
 let button = document.querySelector('#button')
 button.addEventListener('click', func1)
-let elem = document.querySelector('#elem')
-let paragraph = document.querySelector('#paragraph')
+let elem1 = document.querySelector('#elem1')
+let elem2 = document.querySelector('#elem2')
 
 function func1() {
-  paragraph.textContent = elem.value
+  elem2.value = elem1.value ** 2
 }
