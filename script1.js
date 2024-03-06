@@ -1,4 +1,7 @@
 let elem = document.querySelector('#elem')
-elem.addEventListener('focus', function() {
-	elem.value = ''
+let button = document.querySelector('#button')
+button.addEventListener('click', function () {
+  console.log(elem.className)
 })
+
+	
