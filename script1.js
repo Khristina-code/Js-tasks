@@ -1,2 +1,4 @@
-console.log( document.querySelector('#image').src )
+let elem = document.querySelector('#image')
+elem.width = 300
+elem.height = 500
 	
