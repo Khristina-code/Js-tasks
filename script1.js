@@ -1,12 +1,7 @@
-let elem = document.querySelector('#elem')
-elem.addEventListener('focus', func1)
-elem.addEventListener('blur', func2)
+let elem = document.querySelector('#button')
+elem.addEventListener('click', func1)
 
 function func1() {
-console.log(this.value = 1)
-}
-
-function func2() {
-  console.log(this.value = 2)
+console.log(this.value++)
 }
 	
