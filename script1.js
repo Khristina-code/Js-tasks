@@ -1,4 +1,4 @@
-let button1 = document.querySelector('#button')
+let button = document.querySelector('#button')
 button.addEventListener('click', func)
 let elems = document.querySelectorAll('.elem')
 
