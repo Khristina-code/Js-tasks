@@ -1,11 +1,9 @@
-let elem1 = document.querySelector('#elem1')
-let elem2 = document.querySelector('#elem2')
-let elem3 = document.querySelector('#elem3')
-elem1.addEventListener('blur', func)
-elem2.addEventListener('blur', func)
-elem3.addEventListener('blur', func)
+let button = document.querySelector('button')
+button.addEventListener('click', func)
+let elems = document.querySelectorAll('.elem')
 
 function func() {
-  this.value **= 2
+  for (let elem of elems) {
+    elem.textContent = 'text'
+  }
 }
-	
