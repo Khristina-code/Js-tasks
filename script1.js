@@ -1,9 +1,12 @@
 let button = document.querySelector('#button')
 button.addEventListener('click', func)
 let elems = document.querySelectorAll('.elem')
+let paragraph = document.querySelector('.paragraph')
 
 function func() {
-  for (let i = 0; i < elems.length; i++) {
-    elems[i].textContent += i + 1
+  let sum = 0
+  for (let elem of elems) {
+    sum += Number(elem.value)
   }
+  paragraph.textContent = sum
 }
