@@ -1,7 +1,7 @@
 let elems = document.querySelectorAll('.elem')
 for (let elem of elems) {
-	elem.addEventListener('blur', func);
+	elem.addEventListener('click', func);
 }
 function func() {
-	this.value = Number(this.value) + 1;
+ this.textContent = Number(this.textContent) ** 2;
 }
