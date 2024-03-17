@@ -1,9 +1,9 @@
-let button = document.querySelector('#button')
-button.addEventListener('click', func)
+let paragraphs = document.querySelectorAll('.elem')
+for (let elem of paragraphs) {
+  elem.addEventListener('click', func)
+}
 
 function func() {
-  if (button.value >= 10) {
-    this.removeEventListener('click', func)
-  }
-  button.textContent = button.value++
+  this.textContent = this.textContent + '!'
+  this.removeEventListener('click', func)
 }
