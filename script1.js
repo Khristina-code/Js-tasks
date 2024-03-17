@@ -1,7 +1,9 @@
-let divs = document.querySelectorAll('div');
+let button = document.querySelector('#button')
+button.addEventListener('click', func)
+	
+let link = document.querySelector('.link')
 
-for (let div of divs) {
-  div.addEventListener('click', function() {
-    this.textContent++;
-  })
+function func() {
+  link.textContent += '(' + 'href' + ')'
+  this.removeEventListener('click', func)
 }
