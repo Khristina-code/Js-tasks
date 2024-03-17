@@ -4,6 +4,6 @@ button.addEventListener('click', func)
 let link = document.querySelector('.link')
 
 function func() {
-  link.textContent += '(' + 'href' + ')'
+  link.textContent += `(${link.href})`
   this.removeEventListener('click', func)
 }
