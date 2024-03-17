@@ -1,9 +1,9 @@
 let button = document.querySelector('#button')
 button.addEventListener('click', func)
-	
-let link = document.querySelector('.link')
 
 function func() {
-  link.textContent += `(${link.href})`
-  this.removeEventListener('click', func)
+  if (button.value >= 10) {
+    this.removeEventListener('click', func)
+  }
+  button.textContent = button.value++
 }
