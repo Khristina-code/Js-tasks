@@ -1,9 +1,8 @@
-let paragraphs = document.querySelectorAll('.elem')
-for (let elem of paragraphs) {
-  elem.addEventListener('click', func)
+let numbers = document.querySelectorAll('.numbers li')
+for (let number of numbers) {
+  number.addEventListener('click', func)
 }
 
 function func() {
-  this.textContent = this.textContent + '!'
-  this.removeEventListener('click', func)
+  this.textContent++
 }
