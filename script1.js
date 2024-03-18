@@ -4,6 +4,8 @@ for (let number of numbers) {
 }
 
 function func() {
-  this.textContent++
+  if (this.textContent < 10) {
+     this.textContent++
+  }
   this.removeEventListener('click', func)
 }
