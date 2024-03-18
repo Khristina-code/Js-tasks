@@ -5,4 +5,5 @@ for (let number of numbers) {
 
 function func() {
   this.textContent++
+  this.removeEventListener('click', func)
 }
