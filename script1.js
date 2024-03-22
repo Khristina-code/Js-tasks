@@ -1,4 +1,7 @@
 let elems = document.querySelectorAll('p');
+
 for (let elem of elems) {
-  elem.textContent += '!';
+	elem.addEventListener('click', function() {
+    this.textContent = Number(this.textContent) + 1;
+	});
 }
