@@ -1,11 +1,8 @@
-let button = document.querySelector('button');
-let elems  = document.querySelectorAll('input');
-let sum = 0;
+let btn  = document.querySelector('#btn');
+let inp1 = document.querySelector('#inp1');
+let inp2 = document.querySelector('#inp2');
+let inp3 = document.querySelector('#inp3');
 
-for (let elem of elems) {
-	sum += Number(elem.value);
-}
-
-button.addEventListener('click', function() {
-	console.log(sum);
+btn.addEventListener('click', function() {
+	inp3.value = Number(inp1.value) + Number(inp2.value);
 });
