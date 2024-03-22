@@ -1,7 +1,6 @@
-let elems = document.querySelectorAll('p');
+let button = document.querySelector('button');
+let elem   = document.querySelector('p');
 
-for (let elem of elems) {
-	elem.addEventListener('click', function() {
-    this.textContent = Number(this.textContent) + 1;
-	});
-}
+button.addEventListener('click', function() {
+  elem.innerHTML = '<b>text</b>';
+});
