@@ -1,6 +1,12 @@
 let button = document.querySelector('button');
-let elem   = document.querySelector('p');
+let elems  = document.querySelectorAll('p');
 
 button.addEventListener('click', function() {
-  elem.innerHTML = '<b>text</b>';
+	let sum = 0;
+	
+	for (let elem of elems) {
+		sum += Number(elem.textContent);
+	}
+	
+	console.log(sum);
 });
