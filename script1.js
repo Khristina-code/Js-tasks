@@ -1,12 +1,6 @@
 let inp = document.querySelector('#inp');
+let paragraph = document.querySelector('.paragraph')
 
 inp.addEventListener('blur', function() {
-	let digits = inp.value.split('');
-	let sum = 0;
-	
-	for (let digit of digits) {
-		sum += +digit;
-	}
-	
-	console.log(sum);
+paragraph.textContent += inp.value
 });
