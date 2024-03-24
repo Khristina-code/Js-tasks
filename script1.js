@@ -1,6 +1,11 @@
-let inp = document.querySelector('#inp');
+let inp = document.querySelectorAll('.inp');
 let paragraph = document.querySelector('.paragraph')
+let button = document.querySelector('#button')
 
-inp.addEventListener('blur', function() {
-paragraph.textContent += inp.value
+button.addEventListener('click', function () {
+  let sum = 0
+  for (let i = 0; i < inp.length; i++) {
+    sum += Number(inp[i].value)
+  paragraph.textContent = sum
+}
 });
