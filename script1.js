@@ -1,13 +1,9 @@
-let input = document.querySelector('.smallLetter');
+let input = document.querySelector('.words');
 
 
 input.addEventListener('blur', function () {
-  let full = input.value
-  
-    let components = full.split(' ')
-
-  for (let i = 0; i < components.length; i++) {
-    components[i] = components[i].charAt(0).toUpperCase() + components[i].slice(1)
-  } 
-  input.value = components.join(' ')
+  let words = input.value
+  let wordsArray = words.split(' ')
+  let wordsCount = wordsArray.length
+  console.log(wordsCount)
 });
