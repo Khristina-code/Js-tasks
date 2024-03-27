@@ -1,13 +1,13 @@
-let input1 = document.querySelector('.this');
-let inputs = document.querySelectorAll('.another')
+let input = document.querySelector('.smallLetter');
 
 
-input1.addEventListener('blur', function () {
-  let full = input1.value
+input.addEventListener('blur', function () {
+  let full = input.value
   
     let components = full.split(' ')
 
-    inputs[0].value = components[0]
-    inputs[1].value = components[1]
-    inputs[2].value = components[2] 
+  for (let i = 0; i < components.length; i++) {
+    components[i] = components[i].charAt(0).toUpperCase() + components[i].slice(1)
+  } 
+  input.value = components.join(' ')
 });
