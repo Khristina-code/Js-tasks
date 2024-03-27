@@ -1,9 +1,11 @@
-let input = document.querySelector('.words');
-
+let input = document.querySelector('#input');
 
 input.addEventListener('blur', function () {
-  let words = input.value
-  let wordsArray = words.split(' ')
-  let wordsCount = wordsArray.length
-  console.log(wordsCount)
-});
+  let number = input.value
+  
+   if (number.includes('3')) {
+        console.log('Число містить цифру 3.')
+    } else {
+        console.log('Число не містить цифру 3.')
+    }
+})
