@@ -1,11 +1,13 @@
-let input = document.querySelector('#inp');
+let input1 = document.querySelector('.this');
+let inputs = document.querySelectorAll('.another')
 
-input.addEventListener('blur', function () {
-  let sum = 0 
-  let numbers = input.value.split(',')
-  for (let digits of numbers) {
-    sum += Number(digits)
-  }
-  let result = sum / numbers.length
-  console.log(result)
+
+input1.addEventListener('blur', function () {
+  let full = input1.value
+  
+    let components = full.split(' ')
+
+    inputs[0].value = components[0]
+    inputs[1].value = components[1]
+    inputs[2].value = components[2] 
 });
