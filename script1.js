@@ -1,2 +1,4 @@
 let elem = document.querySelector('#elem')
-console.log(elem.hasAttribute('value'))
+elem.addEventListener('click', function() {
+    elem.textContent += elem.dataset.text
+})
