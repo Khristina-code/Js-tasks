@@ -1,2 +1,2 @@
 let elem = document.querySelector('#elem')
-elem.removeAttribute('value')
+console.log(elem.hasAttribute('value'))
