@@ -1,7 +1,12 @@
-let elems = document.querySelectorAll('div')
-
-for (let i = 0; i < elems.length; i++) {
-    elems[i].addEventListener('click', function () {
-        this.textContent += this.dataset.num
-    }) 
- }
+let elem = document.querySelector('#elem')
+let min = Number(elem.getAttribute('data-min'))
+let max = Number(elem.getAttribute('data-max'))
+elem.addEventListener('blur', function () {
+    let myValue = elem.value
+    if (myValue.length < min || myValue.length > max) {
+        console.log('кількість введених символів не збігається із заданим')
+    }
+        else {
+            console.log('одинакова кількість')
+        }
+    })
