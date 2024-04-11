@@ -1,4 +1,3 @@
-let paragraphs = document.querySelectorAll('.paragraph')
-for (let i = 0; i < paragraphs.length; i++) {
-    paragraphs[i].setAttribute('data-num', i+1)
-}
+let elem = document.querySelector('#elem')
+let length = elem.classList.length
+console.log(length)
