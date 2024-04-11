@@ -1,4 +1,4 @@
-let elem = document.querySelector('#elem')
-elem.addEventListener('click', function () {
-    elem.textContent += elem.dataset.productPrice * elem.dataset.productAmount
-})
+let paragraphs = document.querySelectorAll('.paragraph')
+for (let i = 0; i < paragraphs.length; i++) {
+    paragraphs[i].setAttribute('data-num', i+1)
+}
