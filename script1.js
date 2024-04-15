@@ -1,2 +1,2 @@
 let elem = document.querySelector('#elem')
-elem.classList.add('xxx')
+elem.classList.remove('www', 'zzz')
