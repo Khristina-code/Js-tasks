@@ -1,2 +1,3 @@
 let elem = document.querySelector('#elem')
-elem.classList.remove('www', 'zzz')
+let contains = elem.classList.contains('ggg')
+console.log(contains)
