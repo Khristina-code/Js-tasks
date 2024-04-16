@@ -1,3 +1,2 @@
 let elem = document.querySelector('#elem');
-let parent = elem.closest('div');
-console.log(parent)
+let previous = elem.previousElementSibling.textContent += '!';
