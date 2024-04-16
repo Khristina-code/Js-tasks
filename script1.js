@@ -1,3 +1,6 @@
 let elem = document.querySelector('#elem');
-let firstChild = elem.lastElementChild
-firstChild.classList.add('colored')
+let elems = elem.children;
+
+for (let one of elems) {
+	console.log(one.textContent += '!');
+}
