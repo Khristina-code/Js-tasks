@@ -1,8 +1,11 @@
-let list = document.querySelector('.numbers')
-let button = document.querySelector('#button')
-button.addEventListener('click', function () {
-    let listValue = list.querySelectorAll('li')
-    for (let i = 0; i < listValue.length; i++) {
-        listValue[i].style.float = 'left'
-    }
-})
+let elems = document.querySelectorAll('p');
+
+for (let elem of elems) {
+	elem.addEventListener('click', function() {
+       if (this.classList.contains('colored')) {
+            this.classList.remove('colored');
+        } else {
+            this.classList.add('colored');
+        }	
+    });
+}
