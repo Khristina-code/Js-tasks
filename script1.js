@@ -1,3 +1,3 @@
 let elem = document.querySelector('#elem');
-let firstChild = elem.firstElementChild
+let firstChild = elem.lastElementChild
 firstChild.classList.add('colored')
