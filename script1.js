@@ -1,7 +1,9 @@
 let elem = document.querySelector('#elem');
-let nextSibling = elem.nextElementSibling
-let nextNextSibling = nextSibling.nextElementSibling
+let previousSibling = elem.previousElementSibling;
+let nextSibling = elem.nextElementSibling;
 
-if (nextNextSibling) {
-  nextNextSibling.textContent += '!'
+if (previousSibling && nextSibling) {
+    let previous = previousSibling.textContent;
+    previousSibling.textContent = nextSibling.textContent;
+    nextSibling.textContent = previous;
 }
