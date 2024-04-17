@@ -1,4 +1,6 @@
-let parent = document.querySelector('#parent')
-let elems1 = parent.querySelectorAll('.www')
-let elems2 = parent.querySelectorAll('.ggg')
+let elem = document.querySelector('#elem');
+for (let node of elem.childNodes) {
+  console.log(node)
+}
+
 
