@@ -1,7 +1,7 @@
-let elem = document.querySelector('#elem');
-let paragraph = document.querySelector('#paragraph')
-elem.addEventListener('blur', function () {
-   paragraph.textContent = elem.value
+let elem = document.querySelector('#elem')
+let button = document.querySelector('#button')
+button.addEventListener('click', function () {
+  elem.disabled = true
 })
 
 
