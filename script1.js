@@ -1,6 +1,8 @@
 let elem = document.querySelector('#elem');
 for (let node of elem.childNodes) {
-  console.log(node.nodeName)
+  if (node.nodeType != 8) {
+    console.log(node)
+  }
 }
 
 
