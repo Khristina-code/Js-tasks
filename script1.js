@@ -1,12 +1,14 @@
 let elem = document.querySelector('#elem')
-let button1 = document.querySelector('.button1')
-let button2 = document.querySelector('.button2')
-button1.addEventListener('click', function () {
- elem.checked = true
-})
+let button = document.querySelector('#button')
+let paragraph = document.querySelector('#paragraph')
 
-button2.addEventListener('click', function () {
-  elem.checked = false
+button.addEventListener('click', function () {
+  if (elem.checked) {
+    paragraph.textContent = 'hello'
+  } else {
+    paragraph.textContent = 'bye'
+  }
+ 
 })
 
 
