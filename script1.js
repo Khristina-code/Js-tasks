@@ -1,8 +1,15 @@
-let elem = document.querySelector('#elem')
+let elems = document.querySelectorAll('input[type="radio"]')
+let paragraph = document.querySelector('#paragraph')
 let button = document.querySelector('#button')
 
 button.addEventListener('click', function () {
-  elem.checked = !elem.checked
+  for (let elem of elems) {
+    if (elem.checked) {
+     paragraph.textContent = elem.value
+    } else {
+      paragraph.textContent = 'No radio button is selected'
+   }
+ }
 })
 
 
