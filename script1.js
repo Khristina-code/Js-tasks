@@ -1,12 +1,11 @@
-let checkbox = document.querySelector('input[type="checkbox"]');
+let checkbox = document.querySelector('[type="checkbox"]');
 let button = document.querySelector('button');
-let div = document.querySelector('div');
 
 button.addEventListener('click', function() {
 	if (checkbox.checked) {
-		div.textContent = '111';
+		console.log('+++');
 	} else {
-		div.textContent = '222';
+		console.log('---');
 	}
 });
 
