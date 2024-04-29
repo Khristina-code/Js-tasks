@@ -1,16 +1,7 @@
-let elem1 = document.querySelector('#elem1');
-let elem2 = document.querySelector('#elem2');
+let textarea = document.querySelector('textarea');
+let div = document.querySelector('div');
 
-elem1.addEventListener('input', function() {
-  if (elem1.value.length === 2) {
-    elem2.focus()
-  }
-})
-
-elem2.addEventListener('input', function() {
-  if (elem2.value.length === 2) {
-    elem1.focus()
-    elem2.blur()
-  }
-})
+textarea.addEventListener('blur', function() {
+	 div.textContent = textarea.value; 
+});
 
