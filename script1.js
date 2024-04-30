@@ -1,11 +1,8 @@
-let checkbox = document.querySelector('[type="checkbox"]');
-let button = document.querySelector('button');
+let select = document.querySelector('#select');
+let paragraph = document.querySelector('p')
+let button = document.querySelector('button')
 
-button.addEventListener('click', function() {
-	if (checkbox.checked) {
-		console.log('+++');
-	} else {
-		console.log('---');
-	}
-});
+button.addEventListener('click', function () {
+    paragraph.textContent = select.value
+})
 
