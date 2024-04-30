@@ -1,8 +1,12 @@
 let select = document.querySelector('#select');
-let paragraph = document.querySelector('p')
-let button = document.querySelector('button')
 
-button.addEventListener('click', function () {
-    paragraph.textContent = select.value
+select.addEventListener('change', function () {
+  let year = select.value
+    if (new Date(year, 1, 29).getDate() === 29) {
+      console.log('це високосний рік') 
+    } else {
+        console.log('не високосний рік')
+      }
+    
 })
 
