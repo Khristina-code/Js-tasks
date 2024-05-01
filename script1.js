@@ -1,10 +1,13 @@
-let select = document.querySelector('#select')
+"use strict";
 
-select.addEventListener('change', function () {
-  if (this.value <= 5) {
-    console.log('work day')
-  } else {
-    console.log('weekend')
+let elem = document.querySelector('#elem');
+elem.addEventListener('blur', func);
+
+function func() {
+  let self = this
+
+	function square() {
+		return self.value * self.value;
   }
-});
-
+  console.log(square())
+}
