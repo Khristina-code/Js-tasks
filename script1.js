@@ -4,10 +4,10 @@ let elem = document.querySelector('#elem');
 elem.addEventListener('blur', func);
 
 function func() {
-  square(this)
+  console.log(this.value * this.value)
 
-	function square(param) {
-		return param.value * param.value;
+	let square = () => {
+		return this.value;
   }
-  console.log(square(this))
+  square()
 }
