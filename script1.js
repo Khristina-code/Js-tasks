@@ -1,3 +1,4 @@
+let i = 100
 setInterval(function () {
-	console.log('hello')
-}, 3000)
+	console.log(--i)
+}, 1000)
