@@ -1,8 +1,10 @@
-let i = 10
+let start = document.querySelector('#start')
+
+start.addEventListener('click', function () {
+	let i = 100
+
 let timerId = setInterval(function () {
 	console.log(--i)
-
-	if (i == 0) {
-		clearInterval(timerId)
-	}
 }, 1000)
+})
+
