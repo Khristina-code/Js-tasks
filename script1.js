@@ -1,7 +1,7 @@
 let elem = document.querySelector('#elem');
 
-function func(surname, name) {
+function func(name, surname) {
 	console.log(this.value + ', ' + name + ' ' + surname);
 }
 
-func.call(elem, 'John', 'Smit');
+func.apply(elem, ['John', 'Smit']);
