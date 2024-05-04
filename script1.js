@@ -1,7 +1,7 @@
 let start = document.querySelector('#start');
-let stop = document.querySelector('#stop');
+let stop  = document.querySelector('#stop');
 
-let timerId
+let timerId;
 
 start.addEventListener('click', function() {
 		timerId = setInterval(function() {
@@ -12,5 +12,5 @@ start.addEventListener('click', function() {
 
 stop.addEventListener('click', function() {
 	clearInterval(timerId);
-})
+});
 
