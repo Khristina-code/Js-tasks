@@ -1,19 +1,16 @@
 let start = document.querySelector('#start');
-let stop  = document.querySelector('#stop');
+let stop = document.querySelector('#stop');
 
-let timerId; 
+let timerId
 
-start.addEventListener('click', function () {
-	let i = 100
-	timerId = setInterval(function () {
-		console.log(--i)
-		if (i == 0) {
-		clearInterval(timerId);
-	}
+start.addEventListener('click', function() {
+		timerId = setInterval(function() {
+		let date = new Date;
+		console.log(date.getMinutes() + ' ' + date.getSeconds());
 	}, 1000);
 });
 
-stop.addEventListener('click', function () {
-		clearInterval(timerId);
-});
+stop.addEventListener('click', function() {
+	clearInterval(timerId);
+})
 
