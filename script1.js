@@ -1,12 +1,19 @@
-let start = document.querySelector('#start')
+let start = document.querySelector('#start');
+let stop  = document.querySelector('#stop');
 
-start.addEventListener('click', function func() {
+let timerId; 
+
+start.addEventListener('click', function () {
 	let i = 100
+	timerId = setInterval(function () {
+		console.log(--i)
+		if (i == 0) {
+		clearInterval(timerId);
+	}
+	}, 1000);
+});
 
- 	setInterval(function () {
-	console.log(--i)
-		}, 1000)
-	
-	this.removeEventListener('click', func)
-})
+stop.addEventListener('click', function () {
+		clearInterval(timerId);
+});
 
