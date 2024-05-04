@@ -1,12 +1,14 @@
 let button = document.querySelector('#button')
 let paragraph = document.querySelector('#paragraph')
 
+let timerId
 button.addEventListener('click', function () {
-	let self = this
-	let number = Number(self.textContent)
-	setInterval(function () {
-		number++
-		self.textContent = number
-	}, 1000);
+	let i= 10
+	timerId = setInterval(function () {
+		paragraph.textContent = --i
+		if (i === 0) {
+			clearInterval(timerId)
+		}
+}, 1000);
 });
 
