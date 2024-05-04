@@ -1,11 +1,12 @@
-let elem = document.querySelector('#elem');
+let button = document.querySelector('#button')
+let paragraph = document.querySelector('#paragraph')
 
-let timerId
-
-timerId = setInterval(function() {
-	elem.value = Number(elem.value) - 1;
-	if (elem.value == 0) {
-	clearInterval(timerId)
-}
-}, 1000);
+button.addEventListener('click', function () {
+	let self = this
+	let number = Number(self.textContent)
+	setInterval(function () {
+		number++
+		self.textContent = number
+	}, 1000);
+});
 
