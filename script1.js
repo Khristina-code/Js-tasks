@@ -1,6 +1,6 @@
-let elem = document.querySelector('#elem')
+let paragraph = document.querySelector('#paragraph')
 
-	setInterval(function () {
-		elem.value *= elem.value
-}, 1000);
+setTimeout(function () {
+	alert('hello')
+}, 10000)
 
