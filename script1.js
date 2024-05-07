@@ -1,6 +1,8 @@
-let paragraph = document.querySelector('#paragraph')
+let elem = document.querySelector('#elem')
+let button = document.querySelector('#button')
 
-setTimeout(function () {
-	alert('hello')
-}, 10000)
+button.addEventListener('click', function () {
+	elem.style.width = '400px'
+	elem.style.height = '300px'
+})
 
