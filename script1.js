@@ -2,7 +2,7 @@ let elem = document.querySelector('#elem')
 let button = document.querySelector('#button')
 
 button.addEventListener('click', function () {
-	elem.style.width = '400px'
-	elem.style.height = '300px'
+	console.log(parseInt(elem.style.width))
+	console.log(parseInt(elem.style.height))
 })
 
