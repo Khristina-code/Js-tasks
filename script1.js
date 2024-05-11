@@ -1,11 +1,13 @@
-let elem = document.querySelector('#elem');
-let button = document.querySelector('#button')
+let paragraphs = document.querySelectorAll('p');
 
-button.addEventListener('click', function () {
-	let computedStyle = getComputedStyle(elem)
-		console.log(computedStyle.width)
-		console.log(computedStyle.height)
-})
+for (let paragraph of paragraphs) {
+	let number = parseInt(paragraph.textContent)
+	if (number % 2 === 0) {
+		paragraph.classList.add('evenNumber')
+	} else {
+		paragraph.classList.add('oddNumber')
+	}
+}
 
 
 

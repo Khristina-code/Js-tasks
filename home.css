@@ -1,4 +1,7 @@
-#elem {
-  width: 200px;
-  height: 200px;
+.evenNumber {
+  color:red;
+}
+
+.oddNumber {
+  color:green;
 }
