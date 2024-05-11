@@ -1,13 +1,10 @@
-let elem = document.querySelector('div');
-let button1 = document.querySelector('#button1')
-let button2 = document.querySelector('#button2')
+let elem = document.querySelector('#elem');
+let button = document.querySelector('#button')
 
-button1.addEventListener('click', function () {
-	elem.style.color = 'red'
-})
-
-button2.addEventListener('click', function () {
-	elem.style.color = ''
+button.addEventListener('click', function () {
+	let computedStyle = getComputedStyle(elem)
+		console.log(computedStyle.width)
+		console.log(computedStyle.height)
 })
 
 
