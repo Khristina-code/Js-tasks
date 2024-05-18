@@ -8,6 +8,6 @@ map.set(arr1, 'data1');
 map.set(arr2, 'data2');
 map.set(arr3, 'data3');
 
-for (let key of map.keys()) {
-	console.log(key)
+for (let elem of map.values()) {
+	console.log(elem)
 }
