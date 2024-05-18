@@ -1,13 +1,15 @@
 let map = new Map;
 
-let arr1 = [1, 2];
-let arr2 = [3, 4];
-let arr3 = [5, 6];
+let obj1 = [1, 2];
+let obj2 = [3, 4];
+let obj3 = [5, 6];
 
-map.set(arr1, 'data1');
-map.set(arr2, 'data2');
-map.set(arr3, 'data3');
+let arr1 = 'Toyota';
+let arr2 = 'Audi';
+let arr3 = 'BMW';
 
-console.log(map.get(arr1));
-console.log(map.get(arr2));
-console.log(map.get(arr3));
+map.set(obj1, arr1);
+map.set(obj2, arr2);
+map.set(obj3, arr3);
+
+console.log(map);
