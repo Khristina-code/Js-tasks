@@ -1,13 +1,14 @@
+let elems = document.querySelectorAll('.elem')
+
 let map = new Map;
 
-let arr1 = [1, 2];
-let arr2 = [3, 4];
-let arr3 = [5, 6];
+let i = 1
+for (let elem of elems) {
+	map.set(elem, i++);
+}
 
-map.set(arr1, 'data1');
-map.set(arr2, 'data2');
-map.set(arr3, 'data3');
-
-for (let elem of map.values()) {
-	console.log(elem)
+for (let elem of elems) {
+	elem.addEventListener('click', function() {
+		this.value += map.get(this);
+	});
 }
