@@ -1,24 +1,18 @@
-let elems = document.querySelectorAll('.elem')
+let set = new Set;
 
-let map = new Map;
-
-for (let elem of elems) {
-	map.set(elem, []);
+function addToSet(item) {
+	if (set.has(item)) {
+		console.log('дубль')
+	} else {
+		set.add(item)
+		console.log('елемнт доданий')
+	}
 }
 
-for (let elem of elems) {
-	elem.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-      let value = parseFloat(this.value);
-    if (!isNaN(value)) {
-       map.get(this).push(value);
-       this.value = ''; 
-    }
-		}
-	});
+addToSet(1);
+addToSet(1);
+addToSet(2);
+addToSet(3);
+addToSet(3);
 
-            
-  elem.addEventListener('blur', function() {
-		console.log(map.get(this));
-  });
-}
+console.log(set)
