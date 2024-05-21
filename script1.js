@@ -1,18 +1,2 @@
-let set = new Set;
-
-function addToSet(item) {
-	if (set.has(item)) {
-		console.log('дубль')
-	} else {
-		set.add(item)
-		console.log('елемнт доданий')
-	}
-}
-
-addToSet(1);
-addToSet(1);
-addToSet(2);
-addToSet(3);
-addToSet(3);
-
+let set = new Set([1, 2, 3, 1, 3, 4]);
 console.log(set)
