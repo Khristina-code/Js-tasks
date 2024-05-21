@@ -1,8 +1,16 @@
-function removeDuplicates(arr) {
-	let set = new Set(arr)
-	let array = Array.from(set)
-	return array
+let button = document.querySelector('button');
+let elems = document.querySelectorAll('p');
+
+let set = new Set;
+
+for (let elem of elems) {
+	elem.addEventListener('click', function() {
+		set.add(this);
+	});
 }
 
-let arr = [1, 2, 3, 1, 3, 4];
-console.log(removeDuplicates(arr))
+button.addEventListener('click', function() {
+	for (let elem of set) {
+		elem.textContent = elem.textContent + '!';
+	}
+});
