@@ -1,4 +1,4 @@
-let elems = document.querySelectorAll('p')
+let elems = document.getElementsByTagName('p')
 
 let iter = elems[Symbol.iterator]();
 
