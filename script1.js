@@ -1,19 +1,12 @@
-function *func() {
-	for (let i = 10; i >= 0; i--) {
-		yield i;
+function* func(num) {
+	while (num >= 0) {
+    yield num
+    num--
 	}
 }
 
-let iter = func()
+let generator = func(8)
 
-console.log(iter.next())
-console.log(iter.next())
-console.log(iter.next())
-console.log(iter.next())
-console.log(iter.next())
-console.log(iter.next())
-console.log(iter.next())
-console.log(iter.next())
-console.log(iter.next())
-console.log(iter.next())
-console.log(iter.next())
+for (let value of generator) {
+  console.log(value)
+}
