@@ -1,13 +1,17 @@
 function *func() {
-	yield 5;
-	yield 4;
-  yield 3;
-  yield 2;
-  yield 1;
+	for (let i = 10; i >= 0; i--) {
+		yield i;
+	}
 }
 
 let iter = func()
 
+console.log(iter.next())
+console.log(iter.next())
+console.log(iter.next())
+console.log(iter.next())
+console.log(iter.next())
+console.log(iter.next())
 console.log(iter.next())
 console.log(iter.next())
 console.log(iter.next())
