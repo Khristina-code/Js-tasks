@@ -1,8 +1,8 @@
 function* func(num) {
-	while (num >= 0) {
+  while (num >= 0) {
     yield num
-    num--
-	}
+    num -= 2
+  }
 }
 
 let generator = func(8)
