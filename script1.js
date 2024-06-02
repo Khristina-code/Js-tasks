@@ -1,18 +1,11 @@
-function* func() {
-  let prev = 0
-  let curr = 1
-  yield prev;
-  yield curr;
-  while (true) {
-    let next = prev + curr;
-    yield next;
-    prev = curr;
-    curr = next;
-  }
+function *func(obj) {
+	for (let key in obj) {
+		yield [key, obj[key]];
+	}
 }
 
-let generator = func()
+let iter = func({a: 1, b: 2, c: 3});
 
-for (let i = 0; i < 10; i++) {
-  console.log(generator.next().value)
+for (let elem of iter) {
+	console.log(elem);
 }
