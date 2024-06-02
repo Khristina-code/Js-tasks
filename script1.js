@@ -1,11 +1,11 @@
-function *func(obj) {
-	for (let key in obj) {
-		yield [key, obj[key]];
+let obj = { a: 1, b: 2, c: 3 };
+
+obj[Symbol.iterator] = function *() {
+	for (let key in this) {
+    yield { key: key, val: this[key]};
 	}
 }
 
-let iter = func({a: 1, b: 2, c: 3});
-
-for (let elem of iter) {
+for (let elem of obj) {
 	console.log(elem);
 }
